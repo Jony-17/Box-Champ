@@ -1,0 +1,234 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+/*PREDEFINED COLORS AND FONTS*/
+:root {
+    --main-color: #df3b3b;
+    --nav-title-color: #fff;
+    --titletext-color: #1F1F1F;
+    --text-color: #333232;
+    --button-color: #c42828;
+    --separator-color: #787575;
+    --footer1-color: #1F1F1F;
+    --footer2-color: #3E3D3D;
+    --big-font: 90px;
+    --h1-font: 45px;
+    --h2-font: 35px;
+    --h3-font: 30px;
+    --p-font: 16px;
+}
+
+
+/*----------------HEADER/NAVBAR------------------------*/
+
+
+/*HEADER*/
+header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 170px;
+    /*background: var(--bg-color);*/
+}
+
+/*NAVBAR*/
+.navbar {
+    display: flex;
+}
+
+/*NAVBAR A (PAGES)*/
+.navbar a {
+    color: var(--nav-title-color);
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+}
+
+
+/*----------------HOME------------------------*/
+
+
+/*SPAN TEXT (CHAMPION)*/
+span {
+    color: var(--main-color);
+}
+
+/*SECTION (ID OF FIRST PART OF INDEX PAGE)*/
+section {
+    padding: 70px 15%;
+}
+
+/*HOME (CLASS OF FIRST PART OF INDEX PAGE)*/
+.home {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    position: relative;
+    background-color: #000000;
+}
+
+.home::before {
+    background-image: url(../imgs/img-home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 50%;
+    content: '';
+    position: absolute;
+    /*CODE FOR SET TOP, RIGHT, BOTTOM, AND LEFT AT 0*/
+    inset: 0;
+    opacity: 0.5;
+}
+
+/*HOME TEXT (CLASS OF FIRST PART OF INDEX PAGE)*/
+.home-text h1 {
+    font-size: var(--big-font);
+    color: var(--nav-title-color);
+    line-height: 80px;
+    padding-top: 300px;
+    /*CODE TO ISOLATE CERTAIN ELEMENTS BECAUSE OF BACKGROUND IMG*/
+    isolation: isolate;
+}
+
+/*BTN1 (FIRST BUTTON OF INDEX PAGE)*/
+.btn1 {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 10px 50px;
+    background: var(--main-color);
+    box-shadow: 0px 0px white;
+    transition: 0.5s;
+    color: #fff;
+    font-weight: 600;
+    /*CODE TO ISOLATE CERTAIN ELEMENTS BECAUSE OF BACKGROUND IMG*/
+    isolation: isolate;
+}
+
+.btn1:hover {
+    box-shadow: 8px 10px white;
+}
+
+
+/*----------------ABOUT US------------------------*/
+
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 100px;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.about-img img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    box-shadow: 5px 5px 5px rgba(201, 36, 36, 0.3);
+    border-radius: 10px;
+}
+
+.about-text h1 {
+    font-size: var(--h1-font);
+    font-weight: 400;
+}
+
+.about-text h2 {
+    color: var(--titletext-color);
+    font-size: var(--h2-font);
+    font-weight: 800;
+    padding-left: 17px;
+    position: relative;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.about-text h2::after {
+    content: '';
+    width: 5px;
+    height: 67px;
+    display: block;
+    background-color: #df3b3b;
+    position: absolute;
+    left: -1px;
+    top: 7px;
+}
+
+.about-text p {
+    font-size: var(--p-font);
+    text-align: justify;
+}
+
+/*BTN2 (SECOND BUTTON OF INDEX PAGE)*/
+.btn2 {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 50px;
+    background: var(--main-color);
+    box-shadow: 0px 0px white;
+    transition: 0.5s;
+    color: #fff;
+    font-weight: 600;
+}
+
+.btn2:hover {
+    box-shadow: 8px 10px black;
+}
+
+
+/*----------------OUR CLASSES------------------------*/
+
+
+.heading {
+    text-align: center;
+}
+
+.heading h1 {
+    font-size: var(--h1-font);
+    font-weight: 400;
+}
+
+.heading h3 {
+    font-size: var(--h3-font);
+    font-weight: 800;
+}
+
+.classes-img {
+    text-align: center;
+}
+
+.box-img img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    box-shadow: 5px 5px 5px rgba(201, 36, 36, 0.3);
+    border-radius: 10px;
+}
+
+/*BTN3 (THIRD BUTTON OF INDEX PAGE)*/
+.btn3 {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 50px;
+    background: var(--main-color);
+    box-shadow: 0px 0px white;
+    transition: 0.5s;
+    color: #fff;
+    font-weight: 600;
+}
+
+.btn3:hover {
+    box-shadow: 8px 10px black;
+}
