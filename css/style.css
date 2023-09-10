@@ -206,16 +206,29 @@ section {
 }
 
 .classes-img {
-    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box-img {
+    box-sizing: content-box;
+    margin: 10px;
+    height: 250px;
+    width: 350px;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    flex-grow: 1;
 }
 
 .box-img img {
     max-width: 100%;
     width: auto;
     height: auto;
-    box-shadow: 5px 5px 5px rgba(201, 36, 36, 0.3);
-    border-radius: 10px;
 }
+
 
 /*BTN3 (THIRD BUTTON OF INDEX PAGE)*/
 .btn3 {
