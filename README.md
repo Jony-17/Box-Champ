@@ -1,0 +1,1 @@
+Project initially designed in Figma software where it was transferred to the web. To this end, HTML, CSS and Javascript technologies were used. It is an individual project with the aim of improving web development skills.
