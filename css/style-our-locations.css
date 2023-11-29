@@ -8,6 +8,13 @@
     font-family: 'Saira Condensed', sans-serif;
 }
 
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 /*PREDEFINED COLORS AND FONTS*/
 :root {
     --main-color: #df3b3b;
@@ -101,8 +108,13 @@ section {
     isolation: isolate;
 }
 
+/*----------------MAP------------------------*/
 
-
+#map {
+    height: 80%;
+    width: 90%;
+    margin: auto;
+}
 
 /*----------------FOOTER------------------------*/
 
